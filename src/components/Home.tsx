@@ -1,11 +1,43 @@
 import React from "react";
+import profileImage from "../assets/profile.png";
 
 const Home = () => {
   return (
-    <section id="home">
-      <h1>안녕하세요! 저는 [사용자 이름]입니다. 🚀</h1>
-      <p>웹 개발과 블록체인 기술에 관심이 있는 예비 개발자입니다.</p>
-      <p>React와 Tailwind CSS를 활용해 포트폴리오 사이트를 만들고 있어요!</p>
+    <section id="home" className="text-center">
+      {/* 프로필 이미지 */}
+      <img
+        src={profileImage} // 본인 사진 URL로 변경 가능
+        alt="프로필 이미지"
+        className="w-32 h-32 rounded-full mx-auto shadow-lg"
+      />
+
+      {/* 자기소개 */}
+      <h1 className="text-3xl font-bold mt-4">
+        안녕하세요! 저는 김경태입니다. 🚀
+      </h1>
+      <p className="text-gray-600 mt-2">
+        웹 개발과 블록체인 기술에 관심이 많은 예비 개발자입니다. React와
+        Tailwind CSS를 활용하여 포트폴리오를 만들고 있습니다.
+      </p>
+
+      {/* 연락처 (GitHub, 이메일 등) */}
+      <div className="mt-4">
+        <a
+          href="https://github.com/KT20201224"
+          className="text-blue-500 hover:underline mx-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <span>|</span>
+        <a
+          href="mailto:rudxo0525@gmail.com"
+          className="text-blue-500 hover:underline mx-2"
+        >
+          이메일
+        </a>
+      </div>
     </section>
   );
 };

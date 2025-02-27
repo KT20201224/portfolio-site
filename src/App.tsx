@@ -10,12 +10,14 @@ function App() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="pt-16">
+        {" "}
+        {/* 헤더 높이만큼 패딩 추가 */}
         <Home />
         <Projects />
         <TechStack />
+        <ToyPart />
       </main>
-      <ToyPart />
       <Footer />
     </div>
   );
