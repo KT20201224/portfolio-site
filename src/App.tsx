@@ -1,11 +1,22 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import TechStack from "./components/TechStack";
+import ToyPart from "./components/ToyPart";
 
 function App() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-      <h1 className="text-4xl font-bold">포트폴리오 사이트 🚀</h1>
+    <div>
+      <Header />
+      <main>
+        <Home />
+        <Projects />
+        <TechStack />
+      </main>
+      <ToyPart />
+      <Footer />
     </div>
   );
 }
