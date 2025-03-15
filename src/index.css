@@ -4,11 +4,21 @@
 
 /* 배경 & 기본 스타일 */
 body {
-  @apply bg-gray-100 text-gray-900;
+  @apply bg-gray-100 text-gray-900 transition-colors duration-300;
   font-family: "Inter", sans-serif;
+}
+
+/* 다크 모드 스타일 추가 */
+.dark body {
+  @apply bg-gray-900 text-gray-200;
 }
 
 /* 섹션 디자인 */
 section {
   @apply max-w-3xl mx-auto p-6 my-10 bg-white rounded-lg shadow-lg;
+}
+
+/* 다크 모드에서 섹션 스타일 */
+.dark section {
+  @apply bg-gray-800 shadow-lg;
 }

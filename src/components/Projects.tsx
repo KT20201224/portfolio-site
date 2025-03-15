@@ -20,19 +20,28 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects">
-      <h2 className="text-2xl font-bold text-center mb-6">📌 프로젝트 목록</h2>
+    <section
+      id="projects"
+      className="p-6 my-10 bg-gray-100 dark:bg-gray-900 rounded-lg shadow-lg"
+    >
+      <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
+        📌 프로젝트 목록
+      </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectList.map((project, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
           >
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p className="text-gray-600 mt-2">{project.description}</p>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+              {project.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mt-2">
+              {project.description}
+            </p>
             <a
               href={project.link}
-              className="inline-block mt-3 text-blue-500 hover:underline"
+              className="inline-block mt-3 text-blue-500 dark:text-blue-300 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
