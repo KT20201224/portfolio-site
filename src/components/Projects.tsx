@@ -20,10 +20,7 @@ const Projects = () => {
   ];
 
   return (
-    <section
-      id="projects"
-      className="p-6 my-10 bg-gray-100 dark:bg-gray-900 rounded-lg shadow-lg"
-    >
+    <section id="projects">
       <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
         📌 프로젝트 목록
       </h2>
@@ -31,7 +28,7 @@ const Projects = () => {
         {projectList.map((project, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-300 dark:border-gray-700 transition-transform transform hover:scale-105"
           >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               {project.title}

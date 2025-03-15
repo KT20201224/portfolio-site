@@ -11,17 +11,37 @@ const TechStack = () => {
 
   return (
     <section id="techstack">
-      <h2 className="text-2xl font-bold text-center mb-6">🛠 기술 스택</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {techList.map((tech, index) => (
-          <div
-            key={index}
-            className={`flex flex-col items-center p-4 rounded-lg shadow-md ${tech.color} transition-transform transform hover:scale-105`}
-          >
-            <span className="text-4xl">{tech.icon}</span>
-            <p className="mt-2 font-semibold">{tech.name}</p>
-          </div>
-        ))}
+      <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
+        🛠 기술 스택 & 사용 언어
+      </h2>
+
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* 사용 언어 섹션 */}
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            📌 사용 언어
+          </h3>
+          <ul className="text-gray-600 dark:text-gray-300">
+            <li>🔹 JavaScript</li>
+            <li>🔹 TypeScript</li>
+            <li>🔹 Python</li>
+            <li>🔹 Solidity</li>
+          </ul>
+        </div>
+
+        {/* 기술 스택 섹션 */}
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            🚀 기술 스택
+          </h3>
+          <ul className="text-gray-600 dark:text-gray-300">
+            <li>🔹 React.js</li>
+            <li>🔹 Next.js</li>
+            <li>🔹 Tailwind CSS</li>
+            <li>🔹 Node.js</li>
+            <li>🔹 Hardhat (Solidity 개발)</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

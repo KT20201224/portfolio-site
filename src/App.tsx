@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import ToyPart from "./components/ToyPart";
+import MenuTournament from "./components/MenuTournamet";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Projects />
         <TechStack />
         <ToyPart />
+        <MenuTournament />
       </main>
       <Footer />
     </div>
