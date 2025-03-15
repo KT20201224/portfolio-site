@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const DarkModeToggle = () => {
-  // localStorage에서 다크 모드 상태 불러오기
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
@@ -19,9 +18,11 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="p-2 text-white bg-gray-800 dark:bg-yellow-300 dark:text-black rounded-md transition"
+      className="fixed bottom-5 right-5 md:bottom-10 md:right-10 
+                 p-3 bg-gray-800 dark:bg-yellow-300 text-white dark:text-black 
+                 rounded-full shadow-lg hover:scale-110 transition-transform"
     >
-      {darkMode ? "☀️ 라이트 모드" : "🌙 다크 모드"}
+      {darkMode ? "☀️" : "🌙"}
     </button>
   );
 };
