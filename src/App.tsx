@@ -4,8 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
-import ToyPart from "./components/ToyPart";
 import MenuTournament from "./components/MenuTournamet";
+import ClickGame from "./components/ClickGame";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Home />
         <Projects />
         <TechStack />
-        <ToyPart />
+        <ClickGame />
         <MenuTournament />
       </main>
       <Footer />
