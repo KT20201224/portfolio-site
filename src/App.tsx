@@ -13,6 +13,7 @@ import TechStack from "./components/TechStack";
 import MenuTournament from "./components/MenuTournament";
 import ClickGame from "./components/ClickGame";
 import ProjectDetail from "./components/ProjectDetail";
+import ProgrammingLang from "./components/ProgrammingLang";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             element={
               <>
                 <Home />
+                <ProgrammingLang />
                 <TechStack />
                 <Projects />
                 <ClickGame />
