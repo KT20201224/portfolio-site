@@ -6,7 +6,7 @@ const Home = () => {
     <section id="home" className="text-center">
       {/* 프로필 이미지 */}
       <img
-        src={profileImage} // 본인 사진 URL로 변경 가능
+        src={profileImage}
         alt="프로필 이미지"
         className="w-32 h-32 rounded-full mx-auto shadow-lg"
       />
@@ -19,11 +19,11 @@ const Home = () => {
         풀스택 개발과 블록체인 기술에 관심이 많은 예비 개발자입니다.
       </p>
 
-      {/* 연락처 (GitHub, 이메일 등) */}
-      <div className="mt-4">
+      {/* 연락처 (GitHub, 이메일, 블로그) */}
+      <div className="mt-4 space-x-4">
         <a
           href="https://github.com/KT20201224"
-          className="text-blue-500 hover:underline mx-2"
+          className="text-blue-500 hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,9 +32,18 @@ const Home = () => {
         <span>|</span>
         <a
           href="mailto:rudxo0525@gmail.com"
-          className="text-blue-500 hover:underline mx-2"
+          className="text-blue-500 hover:underline"
         >
           이메일
+        </a>
+        <span>|</span>
+        <a
+          href="https://lets-post-it.tistory.com" // 👉 여기에 본인의 블로그 URL 넣기
+          className="text-blue-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          블로그
         </a>
       </div>
     </section>

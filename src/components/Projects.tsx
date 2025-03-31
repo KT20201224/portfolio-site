@@ -3,22 +3,22 @@ import { Link } from "react-router-dom";
 
 const projectList = [
   {
-    id: "portfolio",
-    title: "포트폴리오 웹사이트",
-    description: "React와 Tailwind를 사용하여 제작한 개인 포트폴리오 사이트",
-    link: "/projects/portfolio",
+    id: "emogram",
+    title: "Emogram",
+    description: "사람들의 감정에 대한 기억을 저장하는 기억저장소",
+    link: "/projects/emogram",
   },
   {
-    id: "blockchain",
-    title: "블록체인 스마트 컨트랙트",
-    description: "Solidity를 사용하여 이더리움 네트워크에 배포한 프로젝트",
-    link: "/projects/blockchain",
+    id: "auction",
+    title: "실시간 경매 웹서비스",
+    description: "실시간 경매 플랫폼",
+    link: "/projects/auction",
   },
   {
-    id: "game",
-    title: "게임 개발 프로젝트",
-    description: "메이플스토리 월드 툴을 활용하여 만든 간단한 게임",
-    link: "/projects/game",
+    id: "rasingSteve",
+    title: "RasingSteve",
+    description: "마인크래프트 모드 개발 프로젝트",
+    link: "/projects/rasingSteve",
   },
 ];
 

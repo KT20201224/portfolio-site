@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
+import Certificates from "./components/Certificates";
+import SolvedACTier from "./components/SolvedACTier";
 import MenuTournament from "./components/MenuTournament";
 import ClickGame from "./components/ClickGame";
 import ProjectDetail from "./components/ProjectDetail";
@@ -32,6 +34,8 @@ function App() {
                 <Home />
                 <ProgrammingLang />
                 <TechStack />
+                <Certificates />
+                <SolvedACTier />
                 <Projects />
                 <ClickGame />
                 <MenuTournament />
